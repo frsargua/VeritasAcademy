@@ -1,0 +1,31 @@
+:root {
+  --card-background: #fff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-f1 {
+  font-size: 3rem;
+}
+
+#hero .hero--img__sizing {
+  width: 250px;
+  height: 250px;
+  object-position: 0 10px;
+  background-color: white;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+#hero .hero--text-container {
+  height: 430px;
+  width: 490px;
+  background-color: var(--card-background);
+}
+
+#hero .hero--card--options--container > button {
+  width: 100px;
+}
