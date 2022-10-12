@@ -1,5 +1,7 @@
 :root {
   --card-background: #fff;
+  --var--hero-width: 700px;
+  --var--hero-height: 350px;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
 }
 
 #hero .hero--text-container {
-  height: 430px;
+  height: 420px;
   width: 490px;
   background-color: var(--card-background);
 }
@@ -29,3 +31,44 @@ body {
 #hero .hero--card--options--container > button {
   width: 100px;
 }
+
+.grid-container {
+  display: grid;
+  width: var(--var--hero-width);
+  height: var(--var--hero-height);
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  height: calc(var(--var--hero-height) / 2);
+  width: 100%;
+}
+
+.grid-item > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .grid-item.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+} */
+.grid-item.item-3 {
+  height: var(--var--hero-height);
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.grid-item.item-3 > img {
+  /* height: 100%; */
+  object-fit: fill;
+}
+
+/* .grid-item.item-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} */
