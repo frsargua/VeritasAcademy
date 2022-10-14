@@ -2,7 +2,6 @@
   --card-background: #fff;
   --var--hero-width: 700px;
   --var--hero-height: 350px;
-
   --color-secondary: #00d9ff;
 }
 
@@ -156,4 +155,35 @@ body {
   .plan__billing-cycle {
     font-size: 1.6rem;
   }
+}
+
+/* Footer */
+
+.footer--container {
+  height: 150px;
+  width: 100%;
+}
+
+.footer--container > .icons-container {
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  text-align: center;
+}
+/* .footer--container > .icons-container > .footer--icon-1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+} */
+.footer--container > .icons-container > i {
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.footer-options > li {
+  margin-left: 1rem;
 }
