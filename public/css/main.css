@@ -187,3 +187,45 @@ body {
 .footer-options > li {
   margin-left: 1rem;
 }
+
+.carousel-container {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel {
+  object-fit: contain;
+  width: 500px;
+}
+
+.carousel-slider {
+  display: flex;
+  width: 500px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+}
+@keyframes example {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(-500px);
+  }
+  55% {
+    transform: translateX(-500px);
+  }
+  60% {
+    transform: translateX(-1000px);
+  }
+  95% {
+    transform: translateX(-1000px);
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+  }
+}
