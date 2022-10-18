@@ -196,23 +196,23 @@ body {
 
 .carousel-container {
   display: flex;
-  width: 500px;
+  width: 600px;
   height: 300px;
   margin: auto;
   overflow: hidden;
 }
 .carousel {
-  object-fit: contain;
-  width: 500px;
+  width: 600px;
+  height: 400px;
 }
 
 .carousel-slider {
   --slide--number: attr(data-slide);
   display: flex;
-  width: 500px;
+  width: 600px;
   position: relative;
   transition: all 1000ms;
-  transform: translateX(calc(var(--slide--number) * -500px));
+  transform: translateX(calc(var(--slide--number) * -600px));
 }
 
 /* spacers */
@@ -228,4 +228,10 @@ body {
 .layer-1 {
   background-image: url("../img//spacer-1.svg");
   z-index: 999;
+}
+
+/* Testimonial */
+
+.testimonial__card-body {
+  padding: 2rem 7%;
 }
