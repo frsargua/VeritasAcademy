@@ -94,7 +94,7 @@ body {
 .card--custom {
   border-radius: 7px;
   max-width: 300px;
-  max-height: 400px;
+  height: 400px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
   margin: 1rem;
@@ -110,6 +110,12 @@ body {
   padding: 2rem 7%;
 }
 
+.card__body {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
