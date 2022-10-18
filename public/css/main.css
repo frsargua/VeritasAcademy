@@ -166,8 +166,14 @@ body {
 /* Footer */
 
 .footer--container {
+  aspect-ratio: 900/90;
   height: 150px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer--container > .icons-container {
@@ -179,12 +185,7 @@ body {
   grid-template-rows: auto auto;
   text-align: center;
 }
-/* .footer--container > .icons-container > .footer--icon-1 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-} */
+
 .footer--container > .icons-container > i {
   align-self: center;
   font-size: 1.5rem;
@@ -227,6 +228,11 @@ body {
 
 .layer-1 {
   background-image: url("../img//spacer-1.svg");
+  z-index: 999;
+}
+
+.layer-2 {
+  background-image: url("../img//spacer-2.svg");
   z-index: 999;
 }
 
