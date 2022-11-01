@@ -19,7 +19,9 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand d-flex flex-column p-0">
+    <nav
+      class="navbar navbar-expand position-sticky sticky-lg-top d-flex flex-column p-0"
+    >
       <div class="bg-primary w-100 py-3">
         <div class="container">
           <div class="d-flex flex-row justify-content-between w-100">
@@ -39,9 +41,11 @@
                   >
                 </li>
               </ul>
-              <button class="btn btn-dark text-nowrap mx-2">
-                Request A Lesson
-              </button>
+              <a href="./RequestPage.html">
+                <button class="btn btn-dark text-nowrap mx-2">
+                  Request A Lesson
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -97,8 +101,13 @@
               class="hero--card--options--container d-flex flex-row justify-content-evenly pb-5"
             >
               <!-- <button class="btn btn-success">KS3</button> -->
-              <button class="btn btn-danger btn-lg text-light w-auto">
-                Book a consulation
+              <button class="btn btn-danger btn-lg w-auto">
+                <a
+                  class="text-decoration-none text-light"
+                  href="./RequestPage.html"
+                >
+                  Book a consulation
+                </a>
               </button>
               <!-- <button class="btn btn-info">GCSE</button> -->
               <!-- <button class="btn btn-danger">A level</button> -->

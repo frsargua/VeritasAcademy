@@ -19,6 +19,121 @@
     ></script>
   </head>
   <body>
-    <h1></h1>
+    <nav
+      class="navbar navbar-expand position-sticky sticky-lg-top d-flex flex-column p-0"
+    >
+      <div class="bg-primary w-100 py-3">
+        <div class="container">
+          <div class="d-flex flex-row justify-content-between w-100">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./img//VeritasAcademy.png" alt="Logo" height="30px" />
+            </a>
+            <div class="d-flex align-items-center">
+              <ul class="d-flex list-unstyled m-0 fs-6 fw-semibold">
+                <li class="mx-3">
+                  <a href="" class="text-light text-decoration-none"
+                    >Testimonials</a
+                  >
+                </li>
+                <li class="mx-3">
+                  <a href="" class="text-light text-decoration-none"
+                    >About us</a
+                  >
+                </li>
+              </ul>
+              <a href="./RequestPage.html">
+                <button class="btn btn-dark text-nowrap mx-2">
+                  Request A Lesson
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="hero" class="section__t5-b13">
+      <!-- <div class="spacer layer-1"></div> -->
+      <div class="container">
+        <h1 class="text-center mb-5 fw-semibold">Let's connect!</h1>
+        <div class="requestForm--container">
+          <div>
+            <img src="./img//veritas.PNG" alt="" />
+          </div>
+          <div>
+            <form>
+              <div class="mb-3">
+                <label for="clientName" class="form-label">Name</label>
+                <input
+                  id="cleintName"
+                  class="form-control"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="clientName" class="form-label">Email</label>
+                <input
+                  id="cleintName"
+                  class="form-control"
+                  type="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="clientName" class="form-label">Phone Number</label>
+                <input id="cleintName" class="form-control" type="phone" />
+              </div>
+              <div class="mb-3">
+                <label for="clientName" class="form-label"
+                  >Current stage at school</label
+                >
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">KS3</option>
+                  <option value="2">KS4</option>
+                  <option value="3">KS5</option>
+                  <option value="3">A levels</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Example textarea</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Tell us about yourself and you child"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary btn-lg">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer--container layer-2">
+      <div class="w-100">
+        <div
+          class="d-flex align-items-center justify-content-between container footer--container p-3"
+        >
+          <div class="icons-container bg-primary text-white">
+            <i class="footer--icon-1 fa-brands fa-square-twitter"></i>
+            <i class="footer--icon-2 fa-brands fa-instagram"></i>
+            <i class="footer--icon-3 fa-brands fa-facebook"></i>
+            <i class="footer--icon-4 fa-brands fa-linkedin"></i>
+          </div>
+          <div class="text-light w-auto">
+            <ul class="text-white d-flex footer-options list-unstyled">
+              <li>Book a lesson</li>
+              <li>Offers</li>
+              <li>About us</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
