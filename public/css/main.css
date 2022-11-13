@@ -42,9 +42,10 @@ body {
 
 @media screen and (max-width: 480px) {
   #hero .hero--text-container {
-    height: 420px;
+    height: 400px;
     width: 95%;
     margin: auto;
+    margin-bottom: 2rem;
   }
 }
 
@@ -101,11 +102,6 @@ body {
 }
 .grid-item.item-3 > img {
   object-fit: fill;
-}
-
-@media screen and (min-width: 480px) {
-  .grid-container {
-  }
 }
 
 /* Cards */
@@ -307,6 +303,13 @@ body {
 .layer-2 {
   background-image: url("../img//spacer-2.svg");
   z-index: 999;
+}
+
+@media screen and (max-width: 600px) {
+  .spacer {
+    aspect-ratio: 400/100;
+    width: 100%;
+  }
 }
 
 /* Testimonial */
