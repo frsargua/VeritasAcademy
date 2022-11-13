@@ -7,4 +7,4 @@ setInterval(() => {
   }
   caruouselContainerEl.style.setProperty("--slide--number", String(i));
   i++;
-}, 5000);
+}, 3000);

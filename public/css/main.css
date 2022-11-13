@@ -8,6 +8,7 @@
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .custom-f1 {
@@ -19,6 +20,9 @@ body {
 }
 .section__t5-b13 {
   margin: 5rem 0 13rem 0rem;
+}
+#hero {
+  width: 100vw;
 }
 
 #hero .hero--img__sizing {
@@ -34,6 +38,14 @@ body {
   height: 420px;
   width: 490px;
   background-color: var(--card-background);
+}
+
+@media screen and (max-width: 480px) {
+  #hero .hero--text-container {
+    height: 420px;
+    width: 95%;
+    margin: auto;
+  }
 }
 
 #hero .hero--card--options--container > button {
@@ -91,6 +103,11 @@ body {
   object-fit: fill;
 }
 
+@media screen and (min-width: 480px) {
+  .grid-container {
+  }
+}
+
 /* Cards */
 .card__container {
   display: flex;
@@ -130,6 +147,18 @@ body {
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
+
+@media screen and (max-width: 680px) {
+  .card__container {
+    flex-direction: column;
+  }
+  .card--custom {
+    width: 100%;
+    max-width: 300px;
+    height: 430px;
+  }
+}
+
 /* Plans */
 
 .plan__name {
@@ -167,6 +196,19 @@ body {
   }
   .plan__billing-cycle {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .plan__name {
+    font-size: 2rem;
+  }
+
+  .plan__price {
+    font-size: 2.5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.2rem;
   }
 }
 
@@ -209,20 +251,44 @@ body {
   margin: auto;
   overflow: hidden;
 }
-.carousel {
-  width: 600px;
-  height: 400px;
-}
 
 .carousel-slider {
   --slide--number: attr(data-slide);
   display: flex;
   width: 600px;
   position: relative;
+
   transition: all 1000ms;
   transform: translateX(calc(var(--slide--number) * -600px));
 }
 
+.carousel {
+  width: 600px;
+  height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .carousel-slider {
+    width: 100%;
+    transform: translateX(calc(var(--slide--number) * -100%));
+  }
+  .carousel-slider > div {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .carousel {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    height: 350px;
+  }
+}
 /* spacers */
 
 .spacer {
@@ -244,10 +310,6 @@ body {
 }
 
 /* Testimonial */
-
-.testimonial__card-body {
-  padding: 2rem 7%;
-}
 
 /* Request form */
 

@@ -22,9 +22,11 @@
     <nav
       class="navbar navbar-expand position-sticky sticky-lg-top d-flex flex-column p-0"
     >
-      <div class="bg-primary w-100 py-3">
+      <div class="bg-primary w-100 py-0 py-md-3">
         <div class="container">
-          <div class="d-flex flex-row justify-content-between w-100">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between w-100"
+          >
             <a class="navbar-brand" href="#">
               <img
                 src="./public/img//VeritasAcademy.png"
@@ -32,14 +34,18 @@
                 height="30px"
               />
             </a>
-            <div class="d-flex align-items-center">
-              <ul class="d-flex list-unstyled m-0 fs-6 fw-semibold">
-                <li class="mx-3">
+            <div
+              class="d-flex flex-column flex-md-row align-items-md-center align-items-start"
+            >
+              <ul
+                class="d-flex flex-column flex-md-row list-unstyled m-0 fs-6 fw-semibold"
+              >
+                <li class="mx-3 mb-2 my-md-0">
                   <a href="" class="text-light text-decoration-none"
                     >Testimonials</a
                   >
                 </li>
-                <li class="mx-3">
+                <li class="mx-3 mb-2 my-md-0">
                   <a href="" class="text-light text-decoration-none"
                     >About us</a
                   >
@@ -62,14 +68,6 @@
       <div
         class="container d-flex justify-content-between align-items-center py-5"
       >
-        <!-- <div>
-          <img
-            class="hero--img__sizing"
-            src="./public/img/Kabir-image.png"
-            alt="Kabir the CEO of Veritas Academy"
-          />
-        </div> -->
-
         <div class="grid-container">
           <div class="grid-item item-1">
             <img src="./public/img/classroom.jpg" alt="" />
@@ -87,11 +85,13 @@
             <img src="./public/img/kids.jpg" alt="" />
           </div>
           <span class="image-text">
-            <div class="text-container"><span>Learn and grow</span></div></span
+            <div class="text-container text-center">
+              <span>Learn and grow</span>
+            </div></span
           >
         </div>
 
-        <div class="hero--text-container text-center card">
+        <div class="d-none d-md-block hero--text-container text-center card">
           <div class="card-body d-flex flex-column justify-content-between">
             <div>
               <h2 class="custom-f1 fw-bold">
@@ -104,7 +104,6 @@
             <div
               class="hero--card--options--container d-flex flex-row justify-content-evenly pb-5"
             >
-              <!-- <button class="btn btn-success">KS3</button> -->
               <button class="btn btn-danger btn-lg w-auto">
                 <a
                   class="text-decoration-none text-light"
@@ -113,9 +112,34 @@
                   Book a consulation
                 </a>
               </button>
-              <!-- <button class="btn btn-info">GCSE</button> -->
-              <!-- <button class="btn btn-danger">A level</button> -->
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="d-block d-md-none container hero--text-container text-center card"
+      >
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h2 class="custom-f1 fw-bold">
+              Looking for a quality private tuition?
+            </h2>
+            <h3 class="fs-2">
+              We offer online and in-person tailored lessons.
+            </h3>
+          </div>
+          <div
+            class="hero--card--options--container d-flex flex-row justify-content-evenly pb-5"
+          >
+            <button class="btn btn-danger btn-lg w-auto">
+              <a
+                class="text-decoration-none text-light"
+                href="./RequestPage.html"
+              >
+                Book a consulation
+              </a>
+            </button>
           </div>
         </div>
       </div>
@@ -192,7 +216,7 @@
       </div>
     </section>
     <section>
-      <div class="container py-5 mb-5">
+      <div class="container py-5 mb-5 w-100">
         <header class="text-center">
           <h1 class="fw-bolder mb-3">What others thought.</h1>
           <h3>
@@ -204,9 +228,24 @@
         <div class="carousel-container">
           <div data-slide="1" id="carousel-slider" class="carousel-slider">
             <div>
-              <div class="testimonial__card-body carousel">
+              <div class="carousel">
                 <h5 class="card-title">Name</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Course</h6>
+                <h6 class="card-subtitle mb-2 text-muted">A</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Pariatur suscipit fugit voluptatibus dolorem totam
+                  perspiciatis ullam exercitationem voluptate quasi blanditiis
+                  sit hic ipsa aut error, laborum et laudantium maiores delectus
+                  placeat explicabo! Quos, quaerat culpa ullam repellendus illum
+                  voluptate voluptas!
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="carousel">
+                <h5 class="card-title">Name2</h5>
+                <h6 class="card-subtitle mb-2 text-muted">B</h6>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Pariatur suscipit fugit voluptatibus dolorem totam
@@ -218,37 +257,9 @@
               </div>
             </div>
             <div>
-              <div class="testimonial__card-body carousel">
-                <h5 class="card-title">Name</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Course</h6>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Pariatur suscipit fugit voluptatibus dolorem totam
-                  perspiciatis ullam exercitationem voluptate quasi blanditiis
-                  sit hic ipsa aut error, laborum et laudantium maiores delectus
-                  placeat explicabo! Quos, quaerat culpa ullam repellendus illum
-                  voluptate voluptas!
-                </p>
-              </div>
-            </div>
-            <div>
-              <div class="testimonial__card-body carousel">
-                <h5 class="card-title">Name</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Course</h6>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Pariatur suscipit fugit voluptatibus dolorem totam
-                  perspiciatis ullam exercitationem voluptate quasi blanditiis
-                  sit hic ipsa aut error, laborum et laudantium maiores delectus
-                  placeat explicabo! Quos, quaerat culpa ullam repellendus illum
-                  voluptate voluptas!
-                </p>
-              </div>
-            </div>
-            <div>
-              <div class="testimonial__card-body carousel">
-                <h5 class="card-title">Name</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Course</h6>
+              <div class="carousel">
+                <h5 class="card-title">Name2</h5>
+                <h6 class="card-subtitle mb-2 text-muted">C</h6>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Pariatur suscipit fugit voluptatibus dolorem totam
@@ -276,8 +287,6 @@
           </div>
           <div class="text-light w-auto">
             <ul class="text-white d-flex footer-options list-unstyled">
-              <li>Book a lesson</li>
-              <li>Offers</li>
               <li>About us</li>
               <li>Contact Us</li>
             </ul>
@@ -293,6 +302,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/index.js"></script>
+    <script src="./public/js/index.js"></script>
   </body>
 </html>
