@@ -330,5 +330,19 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
-.requestForm--container > div {
+
+@media screen and (max-width: 600px) {
+  .requestForm--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2 fr;
+    grid-gap: 50px;
+  }
+  .requestForm--container > div {
+    width: 95%;
+    margin: auto;
+  }
+  .requestForm--container > div > img {
+    width: 100%;
+  }
 }

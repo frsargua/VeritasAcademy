@@ -22,31 +22,37 @@
     <nav
       class="navbar navbar-expand position-sticky sticky-lg-top d-flex flex-column p-0"
     >
-      <div class="bg-primary w-100 py-3">
+      <div class="bg-primary w-100 py-0 py-md-3">
         <div class="container">
-          <div class="d-flex flex-row justify-content-between w-100">
-            <a class="navbar-brand" href="./index.html">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between w-100"
+          >
+            <a class="navbar-brand" href="#">
               <img
                 src="./public/img//VeritasAcademy.png"
                 alt="Logo"
                 height="30px"
               />
             </a>
-            <div class="d-flex align-items-center">
-              <ul class="d-flex list-unstyled m-0 fs-6 fw-semibold">
-                <li class="mx-3">
+            <div
+              class="d-flex flex-column flex-md-row align-items-md-center align-items-start"
+            >
+              <ul
+                class="d-flex flex-column flex-md-row list-unstyled m-0 fs-6 fw-semibold"
+              >
+                <li class="mx-3 mb-2 my-md-0">
                   <a href="" class="text-light text-decoration-none"
                     >Testimonials</a
                   >
                 </li>
-                <li class="mx-3">
+                <li class="mx-3 mb-2 my-md-0">
                   <a href="" class="text-light text-decoration-none"
                     >About us</a
                   >
                 </li>
               </ul>
               <a href="./RequestPage.html">
-                <button class="btn btn-dark text-nowrap mx-2">
+                <button class="btn btn-dark text-nowrap mx-2 mb-4">
                   Request A Lesson
                 </button>
               </a>
@@ -55,6 +61,7 @@
         </div>
       </div>
     </nav>
+
     <section id="hero" class="section__t5-b13">
       <!-- <div class="spacer layer-1"></div> -->
       <div class="container">
@@ -64,7 +71,7 @@
             <img src="./public/img//veritas.PNG" alt="" />
           </div>
           <div>
-            <form>
+            <form class="w-100">
               <div class="mb-3">
                 <label for="clientName" class="form-label">Name</label>
                 <input
@@ -130,8 +137,6 @@
           </div>
           <div class="text-light w-auto">
             <ul class="text-white d-flex footer-options list-unstyled">
-              <li>Book a lesson</li>
-              <li>Offers</li>
               <li>About us</li>
               <li>Contact Us</li>
             </ul>
