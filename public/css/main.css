@@ -149,9 +149,9 @@ body {
     flex-direction: column;
   }
   .card--custom {
-    width: 100%;
-    max-width: 300px;
-    height: 430px;
+    max-width: 400px;
+    width: 90%;
+    height: 440px;
   }
 }
 
@@ -175,8 +175,17 @@ body {
   margin-right: 1rem;
 }
 
-.plan .list__item {
-  margin-bottom: 2rem;
+.list {
+  padding-left: 1rem;
+}
+.list__item {
+  margin-bottom: 0.2rem;
+  list-style: none;
+}
+
+.list__item::before {
+  content: url("../img/tick.svg");
+  margin-right: 1rem;
 }
 
 .plan:hover {
